@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Classic Fitness | Gym in Thuvakkunnu</title>
+  <meta name="description" content="Classic Fitness is a 7,000 sq ft gym at H.M. Tower, Thuvakkunnu, Kerala, with certified trainers for ladies, gents and kids.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="wrap header">
+    <div class="logo">Classic <span>Fitness</span></div>
+    <a class="btn btn-dark" href="tel:+919544595937">Call 9544595937</a>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div class="hero-text">
+        <p class="eyebrow">Thuvakkunnu, Kerala</p>
+        <h1>Fit for life.</h1>
+        <p class="lead">A 7,000 sq ft gym at H.M. Tower with certified trainers for ladies, gents and kids.</p>
+        <div class="actions">
+          <a class="btn btn-pink" href="tel:+919544595937">Call to join</a>
+          <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Classic+Fitness+H.M.+Tower+Thuvakkunnu" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Gym size">
+        <div class="big">7,000</div>
+        <div>
+          <p class="panel-title">sq ft of gym floor</p>
+          <p>Ladies &middot; Gents &middot; Kids</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap photo-pair" aria-label="Photos">
+      <figure>
+        <img src="images/equipment-treadmills.jpg" alt="Treadmills and cross trainers in a bright gym hall" width="1400" height="933" fetchpriority="high">
+      </figure>
+      <figure>
+        <img src="images/workout-group-class.jpg" alt="A group class lifting dumbbells overhead" width="1400" height="933" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="band band-white" id="facilities">
+      <div class="wrap">
+        <h2>What you can train</h2>
+        <ul class="facilities">
+          <li>Yoga</li>
+          <li>Zumba</li>
+          <li>Group cardio</li>
+          <li>General training</li>
+          <li>Strength &amp; cardio zone</li>
+          <li>Personal training</li>
+          <li>Nutrition support</li>
+          <li>Workout equipment</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="wrap gallery" id="gallery">
+      <h2>Inside the gym</h2>
+      <div class="filters" role="group" aria-label="Filter photos">
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="equipment" aria-pressed="false">Equipment</button>
+        <button type="button" class="chip" data-filter="workout" aria-pressed="false">Workouts</button>
+      </div>
+      <ul class="grid">
+        <li data-group="equipment"><button type="button" class="thumb"><img src="images/equipment-leg-machines.jpg" alt="Row of leg extension, leg curl and chest press machines" width="1400" height="933" loading="lazy"><span>Strength machines</span></button></li>
+        <li data-group="workout"><button type="button" class="thumb"><img src="images/workout-chest-press.jpg" alt="Man training on a chest press machine" width="1400" height="933" loading="lazy"><span>Chest press</span></button></li>
+        <li data-group="equipment"><button type="button" class="thumb"><img src="images/equipment-rowers.jpg" alt="Rowing machines, ski erg and weight racks" width="1400" height="933" loading="lazy"><span>Rowers and ski erg</span></button></li>
+        <li data-group="workout"><button type="button" class="thumb"><img src="images/workout-trainer-session.jpg" alt="Trainer guiding a woman through a lunge with dumbbells" width="1400" height="933" loading="lazy"><span>Guided by a trainer</span></button></li>
+        <li data-group="equipment"><button type="button" class="thumb"><img src="images/equipment-medicine-balls.jpg" alt="Rack of medicine balls with weight plates beside it" width="1400" height="933" loading="lazy"><span>Medicine balls and plates</span></button></li>
+        <li data-group="workout"><button type="button" class="thumb"><img src="images/workout-bench-press.jpg" alt="Two people doing dumbbell presses on adjustable benches" width="1400" height="933" loading="lazy"><span>Dumbbell bench press</span></button></li>
+        <li data-group="equipment"><button type="button" class="thumb"><img src="images/equipment-treadmills.jpg" alt="Treadmills, a cable machine, dumbbells and lockers in a gym room" width="1400" height="933" loading="lazy"><span>Cardio and weights</span></button></li>
+        <li data-group="workout"><button type="button" class="thumb"><img src="images/workout-battle-ropes.jpg" alt="Man training with battle ropes in front of treadmills" width="1400" height="933" loading="lazy"><span>Battle ropes</span></button></li>
+        <li data-group="workout"><button type="button" class="thumb"><img src="images/workout-group-class.jpg" alt="A group class lifting dumbbells overhead" width="1400" height="933" loading="lazy"><span>Group class</span></button></li>
+        <li data-group="workout"><button type="button" class="thumb"><img src="images/workout-resting.jpg" alt="Man resting between sets on the gym floor" width="1400" height="933" loading="lazy"><span>Between sets</span></button></li>
+      </ul>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <button type="button" class="close" id="lightbox-close" aria-label="Close photo">&times;</button>
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-caption"></p>
+    </dialog>
+
+    <section class="wrap trainers">
+      <h2>Certified trainers, for everyone</h2>
+      <div>
+        <p>Classic Fitness has a certified, qualified trainer on the floor and a certified, qualified ladies trainer, so women can train with a coach they are comfortable with.</p>
+        <p class="muted">Open to ladies, gents and kids.</p>
+      </div>
+    </section>
+
+    <section class="band band-white" id="plans">
+      <div class="wrap two-col">
+        <div>
+          <h2 class="small">Opening hours</h2>
+          <!-- Replace the placeholders below with the real timings -->
+          <div class="placeholder">[YOUR OPENING HOURS]<br>[LADIES BATCH TIMINGS]</div>
+        </div>
+        <div>
+          <h2 class="small">Membership</h2>
+          <!-- Replace [YOUR PRICE] with the real fees -->
+          <dl class="fees">
+            <div><dt>Monthly</dt><dd>[YOUR PRICE]</dd></div>
+            <div><dt>Quarterly</dt><dd>[YOUR PRICE]</dd></div>
+            <div><dt>Yearly</dt><dd>[YOUR PRICE]</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-dark" id="visit">
+      <div class="wrap visit">
+        <div>
+          <h2>Come train with us</h2>
+          <p class="address">Classic Fitness<br>H.M. Tower, Thuvakkunnu, Kerala</p>
+        </div>
+        <div>
+          <p class="phones">9544595937<br>8943419150</p>
+          <div class="actions">
+            <a class="btn btn-yellow" href="tel:+919544595937">Call now</a>
+            <a class="btn btn-outline-light" href="https://www.google.com/maps/search/?api=1&query=Classic+Fitness+H.M.+Tower+Thuvakkunnu" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">&copy; <span id="year">2026</span> Classic Fitness, Thuvakkunnu</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
